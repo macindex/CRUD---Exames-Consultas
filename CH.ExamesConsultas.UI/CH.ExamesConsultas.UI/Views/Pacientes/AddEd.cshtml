@@ -1,0 +1,36 @@
+﻿<h2>Paciente adicionar</h2>
+
+<form action="AddEd" method="post">
+    <div>
+        <label for="txtNome">Nome: </label>
+        <input type="text" name="nome" id="txtNome" value="@Model.Nome" autofocus />
+    </div>
+    <div>
+        <label>CPF: </label>
+        <input type="number" name="cpf" id="num" value="@Model.CPF" autofocus />
+    </div>
+    <div>
+        <label>Data Nasc: </label>
+        <input type="number" name="DataNasc" id="num" value="@Model.DataNasc" autofocus />
+    </div>
+    <div>
+        <label>Sexo: </label>
+        <input type="text" name="sexo" id="num" value="@Model.Sexo" autofocus />
+    </div>
+    <div>
+        <label>Telefone: </label>
+        <input type="number" name="telefone" id="num" value="@Model.Telefone" autofocus />
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="text" name="email" id="num" value="@Model.Email" autofocus />
+    </div>
+
+
+
+    <input type="submit" value="Salvar" />
+
+    <button></button>
+    <a href="/Pacientes">content</a>
+
+</form>

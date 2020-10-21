@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Agenda-Aulas-master\**" />
+    <Compile Remove="Views\NovaPasta1\**" />
+    <Compile Remove="Views\NovaPasta\**" />
+    <Content Remove="Agenda-Aulas-master\**" />
+    <Content Remove="Views\NovaPasta1\**" />
+    <Content Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="Agenda-Aulas-master\**" />
+    <EmbeddedResource Remove="Views\NovaPasta1\**" />
+    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <None Remove="Agenda-Aulas-master\**" />
+    <None Remove="Views\NovaPasta1\**" />
+    <None Remove="Views\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Consultas\Add.cshtml" />
+    <Content Remove="Views\Exames\index.cshtml" />
+    <Content Remove="Views\Pacientes\Add.cshtml" />
+    <Content Remove="Views\Pacientes\AddEdit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\Agenda-Aulas-master.zip" />
+    <None Remove="Views\Consultas" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Home\Sobre.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\Sobre.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Consultas\Add.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Sobre.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Pacientes\AddEdit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Exames\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Consultas\Add.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Consultas\Add.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Views\Pacientes\AddEdit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Pacientes\AddEdit.cshtml" />
+  </ItemGroup>
+
+</Project>

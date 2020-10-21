@@ -1,0 +1,29 @@
+﻿<h2>Listagem de pacientes</h2>
+
+<div>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="AddEd">Novo paciente</a>
+</div>
+
+<table>
+    <tbody>
+        @foreach (var paciente in Model)
+        {
+        <tr>
+            <td>@paciente.Nome</td>
+            paciente
+            <td>@paciente.CPF</td>
+            <td>@paciente.DataNasc</td>
+            <td>@paciente.Sexo</td>
+            <td>@paciente.Telefone</td>
+            <td>@paciente.Email</td>
+
+         <td>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="AddEd/@paciente.Id">Editar</a>
+            <button>Excluir</button>
+         </td>
+
+        </tr>
+        }
+
+    </tbody>
+</table>
